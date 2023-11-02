@@ -1,0 +1,124 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Survey Form</title>
+  <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="background">
+    <div class="heading">
+    <h1 id="title">Survey Form</h1>
+      <p id="description" class="spiel">This is a survey to collect data about your love for puppies</p>
+    </div>
+    <div class="form-body">
+      <form id="survey-form">
+        <fieldset>
+          <legend><h2>Personal Information</h2></legend>
+          <label for="name" id="name-label"><h3>Enter your first name:</h3><input id="name" type="text" required placeholder="Ex: John Doe" ></input></label>
+          <label for="email" id="email-label">Enter your email: <input id="email" type="email" required placeholder="Ex: JDoe@email.com"></input></label>
+          <label for="number" id="number-label">Enter your age: <input id="number" type="number" min="12" max="110" placeholder="Ex: 20"></input></label>
+        </fieldset>
+        <fieldset>
+          <legend><h2>Questionnaire</h2></legend>
+          <label for="dropdown"><h3>What size dog do you prefer?</h3>
+            <select id="dropdown">
+              <option>Select</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </label>
+          <h3>Do you own dogs?</h3>
+          <label for="ownership-yes"><input type="radio" name="ownership" class="inline" value="yes"></input>Yes</label>
+          <label for="ownership-no"><input type="radio" name="ownership" class="inline" value="no"></input>No</label>
+          <label for="ownership-nobut"><input type="radio" name="ownership" class="inline" value="other-pets"></input>No, but I have other pets</label>
+          <h3>Hair Preference?</h3>
+         <label>
+          <input type="checkbox" value="fluff-level" id="fluff-none" class="inline"></input>Hairless
+          <input type="checkbox" value="fluff-level" id="fluff-short" class="inline"></input>Short hair
+          <input type="checkbox" value="fluff-level" id="fluff-furry" class="inline"></input>Furry
+          <input type="checkbox" value="fluff-level" id="fluff-fluffy" class="inline"></input>Fluffy
+          <input type="checkbox" value="fluff-level" id="fluff-long" class="inline"></input>Long hair
+        </label>
+        </fieldset>
+        <fieldset>
+          <label for="survey-reasoning"><h3>Why did you take this survey?</h3><textarea id="survey-reasoning" rows="3" cols="30" placeholder="I want the world to know how much I love dogs..."></textarea></label>
+          <h3>Click below to submit: </h3>
+          <input type="submit" id="submit"></input>
+          <
+          <h2>Thank You!</h2>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+h1, h2 {
+  color: red;
+  text-align: center;
+  font-family: Georgia;
+  margin: auto;
+}
+h3 {
+  color: black;
+  margin: auto;
+}
+.spiel {
+  text-align: center;
+  margin: 10px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 10px;
+  background-color: white;
+  font-size: 16px;
+  font-family: Courier New;
+}
+.heading {
+  background-color: pink;
+  height: 100px;
+}
+.background {
+  background: linear-gradient(180deg, white, pink);
+}
+fieldset {
+  border-color: white;
+  border-width: 3px;
+}
+form {
+  width: 70vw;
+  max-width: 500px;
+  min-width: 200px;
+  margin: 20px auto;
+  padding-bottom: 40px;
+}
+label {
+  display: block;
+}
+input, select {
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  min-height: 2em;
+}
+input[type="radio"] {
+  width: 15px;
+  margin: 7px 7px;
+}
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+** end of undefined **
+
